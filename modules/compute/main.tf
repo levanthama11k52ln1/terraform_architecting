@@ -43,7 +43,7 @@ resource "aws_launch_template" "three_tier_app" {
   vpc_security_group_ids = [var.frontend_app_sg]
   key_name = var.key_name
 
-  user_data = 
+  user_data = EOF
 
   tags = {
     Name = "three-tier-app"
